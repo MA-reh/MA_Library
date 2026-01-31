@@ -40,7 +40,7 @@ MA Library provides a platform for browsing course summaries presented in a book
 
 ---
 
-🎯 Goals
+## 🎯 Goals
 
 Practice real-world frontend development
 
@@ -52,7 +52,7 @@ Improve code organization and maintainability
 
 Add portfolio-ready projects
 
-🧑‍💻 Author
+## 🧑‍💻 Author
 
 Mohamed Ayman (MA)
 Frontend Developer & Computer Science Student
