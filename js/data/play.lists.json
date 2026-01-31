@@ -1,0 +1,153 @@
+{
+  "playlists": {
+    "articles": [
+      {
+        "id": 1,
+        "type": "programming",
+        "programmingLanguageORAcademicYear": "C++",
+        "linkVideo": "https://www.youtube.com/watch?v=KuYWBFsmNmI&list=PLDoPjvoNmBAwgefuRqj8OB5ioMT1eC_EZ",
+        "imgVideo": "elzero_course_c_plus_plus.jpg",
+        "createdBy": "Elzero Web School",
+        "namePlaylist": "Problems Solving With C++ Level Two",
+        "nameSubject": null
+      },
+      {
+        "id": 2,
+        "type": "academic",
+        "programmingLanguageORAcademicYear": "second",
+        "linkVideo": "https://www.youtube.com/watch?v=ESDT1aeEKOc&list=PLu-6WP5Fa3Z8RJUzA5hRM6f-8Tp786gNR",
+        "imgVideo": "omnia_arafat_Database_1.avif",
+        "createdBy": "Omnia Arafat",
+        "namePlaylist": "Database",
+        "nameSubject": null
+      },
+      {
+        "id": 3,
+        "type": "programming",
+        "programmingLanguageORAcademicYear": "python",
+        "linkVideo": "https://www.youtube.com/watch?v=h3VCQjyaLws&list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ",
+        "imgVideo": "Codezilla_python.avif",
+        "createdBy": "Codezilla",
+        "namePlaylist": "Learning Python Language Arabic",
+        "nameSubject": null
+      },
+      {
+        "id": 4,
+        "type": "academic",
+        "programmingLanguageORAcademicYear": "first",
+        "linkVideo": "https://www.youtube.com/watch?v=Gn0-7-6RbcE&list=PLBrD6pZ89fS98A16Qd-h7FG8M5BBf21na",
+        "imgVideo": "CS_Raiders_Math.avif",
+        "createdBy": "CS - Raiders",
+        "namePlaylist": "𝐌𝐚𝐭𝐡 - 𝟏 𝐂𝐨𝐮𝐫𝐬𝐞",
+        "nameSubject": null
+      },
+      {
+        "id": 5,
+        "type": "academic",
+        "programmingLanguageORAcademicYear": "second",
+        "linkVideo": "https://www.youtube.com/watch?v=jyBzAYwzLWI&list=PLu-6WP5Fa3Z-hDUqKyajIiP1FW4UmNDdn",
+        "imgVideo": "Omnia_Arafat_Logic.avif",
+        "createdBy": "Omnia Arafat",
+        "namePlaylist": "Logic And Design 1",
+        "nameSubject": null
+      },
+      {
+        "id": 6,
+        "type": "programming",
+        "academicYear": null,
+        "programmingLanguageORAcademicYear": "java",
+        "linkVideo": "https://www.youtube.com/watch?v=FbviMTJ_vP8&list=PL1DUmTEdeA6K7rdxKiWJq6JIxTvHalY8f",
+        "imgVideo": "Mohamed_El_Desouki_JAVA.png",
+        "createdBy": "Mohamed El Desouki",
+        "namePlaylist": "Java Programming for Beginners",
+        "nameSubject": null
+      },
+      {
+        "id": 7,
+        "type": "programming",
+        "academicYear": null,
+        "programmingLanguageORAcademicYear": "JavaScript",
+        "linkVideo": "https://www.youtube.com/watch?v=lfmg-EJ8gm4",
+        "imgVideo": "Bro_Code_JS.avif",
+        "createdBy": "Bro Code",
+        "namePlaylist": null,
+        "nameSubject": "JavaScript Full Course for free 🌐"
+      },
+      {
+        "id": 8,
+        "type": "programming",
+        "academicYear": null,
+        "programmingLanguageORAcademicYear": "JavaScript",
+        "linkVideo": "https://www.youtube.com/watch?v=lfmg-EJ8gm4",
+        "imgVideo": "Bro_Code_JS.avif",
+        "createdBy": "Bro Code",
+        "namePlaylist": null,
+        "nameSubject": "JavaScript Full Course for free 🌐"
+      },
+      {
+        "id": 14,
+        "type": "programming",
+        "academicYear": null,
+        "programmingLanguageORAcademicYear": "JavaScript",
+        "linkVideo": "https://www.youtube.com/watch?v=lfmg-EJ8gm4",
+        "imgVideo": "Bro_Code_JS.avif",
+        "createdBy": "Bro Code",
+        "namePlaylist": null,
+        "nameSubject": "JavaScript Full Course for free 🌐"
+      },
+      {
+        "id": 9,
+        "type": "programming",
+        "academicYear": null,
+        "programmingLanguageORAcademicYear": "JavaScript",
+        "linkVideo": "https://www.youtube.com/watch?v=lfmg-EJ8gm4",
+        "imgVideo": "Bro_Code_JS.avif",
+        "createdBy": "Bro Code",
+        "namePlaylist": null,
+        "nameSubject": "JavaScript Full Course for free 🌐"
+      },
+      {
+        "id": 10,
+        "type": "academic",
+        "programmingLanguageORAcademicYear": "first",
+        "linkVideo": "https://www.youtube.com/watch?v=Gn0-7-6RbcE&list=PLBrD6pZ89fS98A16Qd-h7FG8M5BBf21na",
+        "imgVideo": "CS_Raiders_Math.avif",
+        "createdBy": "CS - Raiders",
+        "namePlaylist": "𝐌𝐚𝐭𝐡 - 𝟏 𝐂𝐨𝐮𝐫𝐬𝐞",
+        "nameSubject": null
+      },
+      {
+        "id": 11,
+        "type": "programming",
+        "academicYear": null,
+        "programmingLanguageORAcademicYear": "JavaScript",
+        "linkVideo": "https://www.youtube.com/watch?v=lfmg-EJ8gm4",
+        "imgVideo": "Bro_Code_JS.avif",
+        "createdBy": "Bro Code",
+        "namePlaylist": null,
+        "nameSubject": "JavaScript Full Course for free 🌐"
+      },
+      {
+        "id": 12,
+        "type": "academic",
+        "programmingLanguageORAcademicYear": "first",
+        "linkVideo": "https://www.youtube.com/watch?v=Gn0-7-6RbcE&list=PLBrD6pZ89fS98A16Qd-h7FG8M5BBf21na",
+        "imgVideo": "CS_Raiders_Math.avif",
+        "createdBy": "CS - Raiders",
+        "namePlaylist": "𝐌𝐚𝐭𝐡 - 𝟏 𝐂𝐨𝐮𝐫𝐬𝐞",
+        "nameSubject": null
+      },
+      {
+        "id": 13,
+        "type": "programming",
+        "academicYear": null,
+        "programmingLanguageORAcademicYear": "JavaScript",
+        "linkVideo": "https://www.youtube.com/watch?v=lfmg-EJ8gm4",
+        "imgVideo": "Bro_Code_JS.avif",
+        "createdBy": "Bro Code",
+        "namePlaylist": null,
+        "nameSubject": "JavaScript Full Course for free 🌐"
+      }
+    ]
+  }
+}

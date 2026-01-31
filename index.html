@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA Library</title>
+
+
+    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/plugins/all.min.css">
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins/fonts.css">
+    <link rel="stylesheet" href="css/plugins/animate.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="images/logo-bg-light.svg" type="image/x-icon">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+            <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+            <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+    </svg>
+
+    <!-- Global Components -->
+    <div class="loading-page" id="loading">
+        <div class="book">
+            <div class="book__pg-shadow"></div>
+            <div class="book__pg"></div>
+            <div class="book__pg book__pg--2"></div>
+            <div class="book__pg book__pg--3"></div>
+            <div class="book__pg book__pg--4"></div>
+            <div class="book__pg book__pg--5"></div>
+        </div>
+
+        <h2 class="h1 font-4">
+            Library MA
+        </h2>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav id="Navbar1" class="">
+        <div class="container">
+            <span id="BtnSliderNavbar" onclick="openPopup('nav')">
+                <span class="lines"></span>
+                <span class="lines"></span>
+                <span class="lines"></span>
+            </span>
+            <a href="index.html" class="nav-brand ">
+                <img src="images/logo-bg-light.svg" alt="Logo library MA" class="img-fluid me-1">
+                <h5 class="m-0">Library MA</h5>
+            </a>
+            <div class="d-lg-block d-none" id="navbarList">
+                <ul type="none" class="d-flex p-0 m-0">
+                    <li class="parent-link">
+                        <a href="pages/howToUse.html" class="navLink">
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="text font-2">How to use?</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Second Navbar -->
+    <nav id="Navbar2" class="navbar navbar-expand-lg py-1">
+        <div class="container">
+            <a href="index.html" class="navbar-brand ">
+                <img src="images/logo-bg-light.svg" alt="Logo library MA" class="img-fluid me-1">
+                <h5 class="m-0">Library MA</h5>
+            </a>
+
+            <button id="secondBtnNavbar" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                aria-label="Toggle navigation">
+                <span class="lines"></span>
+                <span class="lines"></span>
+                <span class="lines"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-xl-3 me-lg-1 mb-2 mb-lg-0 mb-xl-0">
+                        <a class="nav-link active" href="#HomeHeader">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-xl-3 me-lg-1 mb-2 mb-lg-0 mb-xl-0">
+                        <a class="nav-link" href="#homeWhyChooseUs">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">Why Choose Us?</span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-xl-3 me-lg-1 mb-2 mb-lg-0 mb-xl-0">
+                        <a class="nav-link" href="#homeNewestFiles">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">Newest Files</span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-xl-3 me-lg-1 mb-2 mb-lg-0 mb-xl-0">
+                        <a class="nav-link" href="#homeFeedBacks">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">FeedBacks</span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-0 mb-3 mb-lg-0 me-lg-3">
+                        <a class="nav-link" href="#homeFaqAndContact">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">FAQ</span>
+                        </a>
+                    </li>
+                    <label class="switch">
+                        <input type="checkbox" id="themeBtn" />
+                        <span class="slider"></span>
+                        <span class="hand left">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M0 9H13V15C13 15.2761 12.7761 15.5 12.5 15.5H0V9Z" fill="#fcdbb0"></path>
+                                <path
+                                    d="M13.5 9H21C21.5523 9 22 9.44772 22 10V15C22 15.5523 21.5523 16 21 16H17.5C15.2909 16 13.5 14.2091 13.5 12V9Z"
+                                    fill="#FED5CD"></path>
+                                <path d="M13 9H15V14.5C15 14.7761 14.7761 15 14.5 15H13V9Z" fill="#2b1b08"></path>
+                                <path class="thumb"
+                                    d="M23.25 9.19999H15V14.2C16.933 14.2 18.5 12.633 18.5 10.7L22.25 10.7C22.9403 10.7 23.5 10.1404 23.5 9.44999C23.5 9.31192 23.3881 9.19999 23.25 9.19999Z"
+                                    fill="#FDE3D9"></path>
+                            </svg>
+                        </span>
+                        <span class="hand right">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M24 9H11V15C11 15.2761 11.2239 15.5 11.5 15.5H24V9Z" fill="#2b1b08"></path>
+                                <path
+                                    d="M10.5 9H3C2.44772 9 2 9.44772 2 10V15C2 15.5523 2.44772 16 3 16H6.5C8.70914 16 10.5 14.2091 10.5 12V9Z"
+                                    fill="#FED5CD"></path>
+                                <path d="M11 9H9V14.5C9 14.7761 9.22386 15 9.5 15H11V9Z" fill="#fcdbb0"></path>
+                                <path class="thumb"
+                                    d="M0.750003 9.19999H9V14.2C7.067 14.2 5.5 12.633 5.5 10.7L1.75002 10.7C1.05965 10.7 0.5 10.1404 0.5 9.44999C0.5 9.31192 0.61193 9.19999 0.750003 9.19999Z"
+                                    fill="#FDE3D9"></path>
+                            </svg>
+                        </span>
+                    </label>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Header Section -->
+    <header id="HomeHeader" class="section-page">
+        <div class="container">
+            <div class="row">
+                <div class="parts mt-4 mt-lg-0 col-xl-7 col-lg-6 mt-lg-0 mb-4 mb-lg-0">
+                    <div class="item">
+                        <h1 class="mb-2">
+                            Welcome to Library MA<br>
+                            Empower Your Mind with Knowledge! <br>
+                        </h1>
+                        <p class="mb-2">
+                            MA Library is your trusted digital hub for university learning materials. Explore a curated
+                            collection of educational books, notes, and guides designed to help you master every subject
+                            with ease and confidence.
+                        </p>
+                        <a href="pages/about.html" class="main-btn">
+                            <span>About Us</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="parts col-xl-5 col-lg-6">
+                    <div class="item">
+                        <div class="row">
+                            <div class="cube mb-3 mb-lg-5 col-4">
+                                <div class="item"></div>
+                            </div>
+                            <div class="cube mb-3 mb-lg-5 col-4">
+                                <div class="item">
+                                    <a href="pages/favorite.html">
+                                        <i class="fa-solid fa-star"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cube mb-3 mb-lg-5 col-4">
+                                <div class="item"></div>
+                            </div>
+                            <div class="cube mb-3 mb-lg-5 col-4">
+                                <div class="item">
+                                    <a href="pages/materials.html">
+                                        <i class="fa-solid fa-file"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cube mb-3 mb-lg-5 col-4">
+                                <div class="item wow animate__rubberBand" data-wow-duration="1.5s">
+                                    <img src="images/logo-bg-light.svg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="cube mb-3 mb-lg-5 col-4">
+                                <div class="item">
+                                    <a href="pages/playlists.html">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cube col-4">
+                                <div class="item"></div>
+                            </div>
+                            <div class="cube col-4">
+                                <div class="item">
+                                    <a href="pages/registration.html">
+                                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cube col-4">
+                                <div class="item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-shape-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 2 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Why Choose Us Section -->
+    <section id="homeWhyChooseUs" class="differenceSection py-5 section-page">
+        <div class="container text-center">
+            <h2 class="title mb-5 wow animate__jackInTheBox" data-wow-duration="1s">
+                Why Choose Us?
+            </h2>
+            <div class="row ">
+                <div class="part mb-3 col-xl-4 col-md-6">
+                    <div class="item wow animate__lightSpeedInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h5 class="why-title">Curated Academic Content</h5>
+                        <p class="m-0">Each book is carefully selected to match your academic goals and syllabus.</p>
+                    </div>
+                </div>
+                <div class="part mb-3 col-xl-4 col-md-6">
+                    <div class="item wow animate__jackInTheBox" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <h5 class="why-title">Secure & Reliable Platform</h5>
+                        <p class="m-0">Your data and study progress are protected with top-grade security.</p>
+                    </div>
+                </div>
+                <div class="part mb-3 col-xl-4 col-md-6">
+                    <div class="item wow animate__lightSpeedInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="icon">
+                            <i class="fa-solid fa-retweet"></i>
+                        </div>
+                        <h5 class="why-title">Always Up-to-Date</h5>
+                        <p class="m-0">New materials added regularly to keep your learning fresh and relevant.</p>
+                    </div>
+                </div>
+                <div class="part mb-3 ms-lg-auto col-xl-4 col-md-6">
+                    <div class="item wow animate__bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="icon">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <h5 class="why-title">Study Smarter, Not Harder</h5>
+                        <p class="m-0">Simplified guides and notes that help you ace exams effortlessly.</p>
+                    </div>
+                </div>
+                <div class="part mb-lg-3 me-auto col-xl-4 col-md-12">
+                    <div class="item wow animate__bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h5 class="why-title">Student Community Support</h5>
+                        <p class="m-0">Connect with peers, share notes, and grow together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newest Files Section -->
+    <section id="homeNewestFiles" class="py-5 section-page">
+        <div class="container py-5">
+            <h2 class="title mb-5 wow animate__jackInTheBox" data-wow-duration="1s">
+                Newest Files
+            </h2>
+            <div class="container-books owl-carousel owl-theme wow animate__backInLeft">
+
+            </div>
+        </div>
+        <div class="custom-shape-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 2 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- FeedBacks Section -->
+    <section id="homeFeedBacks" class="differenceSection section-page py-5">
+        <div class="custom-shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container py-3">
+            <h2 class="title text-center mb-5 wow animate__jackInTheBox" data-wow-duration="1s">
+                Our Clients FeedBacks
+            </h2>
+            <div class="content">
+                <div class="row">
+                    <div class="swiper mySwiper part col-lg-4 mb-5 mb-lg-0">
+                        <div class="swiper-wrapper">
+
+                        </div>
+                        <div id="numberCardsOfComments" class="wow animate__fadeInLeft" data-wow-duration="1s"
+                            data-wow-delay="2s">
+                            <span class="currentNumber me-1" id="current">
+                                1
+                            </span>
+                            /
+                            <span class="allNumbers ms-1" id="total">
+                                10
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-feedBack mt-2 mt-lg-0  part col-lg-8">
+                        <div class="item">
+                            <form id="formFeedBack">
+                                <div class="row">
+                                    <div class="parts col-md-6 mb-3">
+                                        <div class="input-group mb-2 wow animate__fadeInLeft" data-wow-duration="1s"
+                                            data-wow-delay=".3s">
+                                            <label for="username" class="input-group-text" id="basic-addon1">
+                                                <i class="fa-solid fa-user"></i>
+                                            </label>
+                                            <input type="text" data-valid="false" class="inputs form-control"
+                                                placeholder="Your Name: " name="UserName" id="username"
+                                                autocomplete="off">
+                                        </div>
+                                        <span></span>
+                                    </div>
+                                    <div class="parts col-md-6 mb-3">
+                                        <div class="input-group mb-2 wow animate__fadeInRight" data-wow-duration="1s"
+                                            data-wow-delay=".3s">
+                                            <label class="input-group-text" for="inputGroupSelect01">
+                                                <i class="fa-solid fa-hashtag"></i>
+                                            </label>
+                                            <select data-valid="false" class="inputs form-select" name="academicYear"
+                                                id="inputGroupSelect01">
+                                                <option value="" selected disabled>Choose Your Academic Year</option>
+                                                <option value="First">First Year</option>
+                                                <option value="Second">Second Year</option>
+                                                <option value="Third">Third Year</option>
+                                                <option value="Fourth">Fourth Year</option>
+                                            </select>
+                                        </div>
+                                        <span></span>
+                                    </div>
+                                    <div class="parts col-lg-12 mb-3 wow animate__fadeIn" data-wow-duration="1s"
+                                        data-wow-delay="1s">
+                                        <div class="input-group mb-2">
+                                            <label for="message" class="input-group-text" id="basic-addon1">
+                                                <i class="fa-solid fa-comment"></i>
+                                            </label>
+                                            <textarea name="message" id="message" rows="10" data-valid="false"
+                                                class="inputs form-control" placeholder="Your Message..."></textarea>
+                                        </div>
+                                        <span></span>
+                                    </div>
+                                    <div class="parts col-lg-12 wow animate__fadeInUp" data-wow-duration="1s"
+                                        data-wow-delay="1.5s">
+                                        <button class="second-main-btn" type="submit">
+                                            <span>Send</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- F.A.Q & Contact Us Section -->
+    <section id="homeFaqAndContact" class="py-5 section-page">
+        <div class="container">
+            <h2 class="title text-center mb-5 wow animate__jackInTheBox" data-wow-duration="1s">
+                We’ve all the answers
+            </h2>
+            <div class="row">
+                <div class="part FAQ col-lg-9">
+                    <div class="row faq-container">
+                        <div class="col-lg-4 mb-4 col-sm-6 faq-card wow animate__bounceIn" data-wow-duration="1s"
+                            data-wow-delay=".3s">
+                            <div class="faq-card-inner">
+                                <div class="faq-card-front">
+                                    What is the name of the library website designer?
+                                </div>
+                                <div class="faq-card-back">
+                                    The library website was designed by Medoo Ayman (MÀ).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 col-sm-6 faq-card wow animate__bounceIn" data-wow-duration="1s"
+                            data-wow-delay=".3s">
+                            <div class="faq-card-inner">
+                                <div class="faq-card-front">
+                                    What is your privacy policy?
+                                </div>
+                                <div class="faq-card-back">
+                                    We protect your book rights and do not share your personal information.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 col-sm-6 faq-card wow animate__bounceIn" data-wow-duration="1s"
+                            data-wow-delay=".3s">
+                            <div class="faq-card-inner">
+                                <div class="faq-card-front">
+                                    Can I download the files and display them within the website?
+                                </div>
+                                <div class="faq-card-back">
+                                    Yes, you can easily download and display them within the website.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-0 col-sm-6 faq-card wow animate__bounceIn"
+                            data-wow-duration="1s" data-wow-delay=".3s">
+                            <div class="faq-card-inner">
+                                <div class="faq-card-front">
+                                    What are the ways to contact you?
+                                </div>
+                                <div class="faq-card-back">
+                                    <span class="text">
+                                        You can contact us via email, phone, or
+                                        <a href="pages/about.html" class="contact-btn">click Me</a> .
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-sm-0 col-sm-6 faq-card wow animate__bounceIn"
+                            data-wow-duration="1s" data-wow-delay=".3s">
+                            <div class="faq-card-inner">
+                                <div class="faq-card-front">
+                                    Do you offer eBooks?
+                                </div>
+                                <div class="faq-card-back">
+                                    Yes! We have a wide range of eBooks available for instant download.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-sm-0 col-sm-6 faq-card wow animate__bounceIn"
+                            data-wow-duration="1s" data-wow-delay=".3s">
+                            <div class="faq-card-inner">
+                                <div class="faq-card-front">
+                                    Does the website require registration to download and view the files?
+                                </div>
+                                <div class="faq-card-back">
+                                    No registration is required — everything is available to you for free.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="part contactTravel text-center col-lg-3 mt-lg-0 mt-4">
+                    <div class="item wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay=".9s">
+                        <h4 class="">
+                            If you can’t find your question?
+                        </h4>
+                        <a href="pages/about.html" class="main-btn d-block mx-auto mt-3">
+                            <span>
+                                Click Here
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-2 section-page">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-lg-6 part mb-5 mb-lg-0">
+                    <div class="item">
+                        <div class="header mb-4">
+                            <a href="index.html" class="nav-brand">
+                                <img src="images/logo-bg-light.svg" alt="Logo library MA" class="img-fluid me-1">
+                                <h5 class="m-0 font-2">Library MA</h5>
+                            </a>
+                        </div>
+                        <div class="body text-start">
+                            <p class="mb-3">
+                                MA Library is your ultimate academic companion — a modern digital space designed to help
+                                university students learn, explore, and access educational resources anytime, any where.
+                            </p>
+                            <a href="pages/about.html" class="second-main-btn">
+                                <span>
+                                    About Us
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 part mb-3 mb-lg-0">
+                    <div class="item">
+                        <div class="header mb-4">
+                            <h4 class="title-footer font-2">
+                                <i class="fa-solid fa-certificate"></i> Links Pages
+                            </h4>
+                        </div>
+                        <div class="body">
+                            <ul type="none" class="p-0">
+                                <li class="mb-3">
+                                    <a href="pages/howToUse.html" class="footer-link wow animate__bounceIn"
+                                        data-wow-duration=".5s" data-wow-delay=".1s">
+                                        <span class="font-2"> How To Use?</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="pages/materials.html" class="footer-link wow animate__bounceIn"
+                                        data-wow-duration=".5s" data-wow-delay=".2s">
+                                        <span class="font-2"> Materials</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="pages/playlists.html" class="footer-link wow animate__bounceIn"
+                                        data-wow-duration=".5s" data-wow-delay=".3s">
+                                        <span class="font-2"> Playlists</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="pages/favorite.html" class="footer-link wow animate__bounceIn"
+                                        data-wow-duration=".5s" data-wow-delay=".4s">
+                                        <span class="font-2"> Favorite</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 part">
+                    <div class="item">
+                        <div class="header mb-4">
+                            <h4 class="title-footer font-2">
+                                <i class="fa-solid fa-phone"></i> Contact Us
+                            </h4>
+                        </div>
+                        <div class="body">
+                            <ul type="none" class="p-0">
+                                <li class="mb-3">
+                                    <a class="footer-link wow animate__bounceIn" data-wow-duration=".5s"
+                                        data-wow-delay=".1s" target="_blank" href="https://wa.me/qr/OZJSQ4A6AYJOO1">
+                                        <span class="footer-social">
+                                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="footer-link wow animate__bounceIn" data-wow-duration=".5s"
+                                        data-wow-delay=".2s" target="_blank"
+                                        href="https://www.linkedin.com/in/mohamed-ayman-abdelrazek-8abb06345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                        <span class="footer-social">
+                                            <i class="fa-brands fa-linkedin"></i> Linked in
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="footer-link wow animate__bounceIn" data-wow-duration=".5s"
+                                        data-wow-delay=".3s" target="_blank" href="https://github.com/MA-reh">
+                                        <span class="footer-social">
+                                            <i class="fa-brands fa-github"></i> GitHub
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="footer-link wow animate__bounceIn" data-wow-duration=".5s"
+                                        data-wow-delay=".4s" target="_blank" href="mailto:mohamedayman152025@gmail.com">
+                                        <span class="footer-social">
+                                            <i class="fa-solid fa-envelope"></i> My Email
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-author text-center">
+                <span>
+                    © 2023 <span class="text-2">Library MA</span> . All Rights Reserved | Created by <span
+                        class="text-1">Mohammed_Ayman(MÀ).</span>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global Components -->
+    <div class="popup" data-popup-name="nav" onclick="closePopup('nav')">
+        <span class="hands">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24" fill="none"
+                stroke="#f9e9d5" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-hand-icon icons grab lucide-hand">
+                <path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+                <path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
+                <path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" />
+                <path
+                    d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24" fill="none"
+                stroke="#f9e9d5" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-hand-grab-icon icons  lucide-hand-grab">
+                <path d="M18 11.5V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4" />
+                <path d="M14 10V8a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
+                <path d="M10 9.9V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v5" />
+                <path d="M6 14a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+                <path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-4a8 8 0 0 1-8-8 2 2 0 1 1 4 0" />
+            </svg>
+        </span>
+        <div class="box">
+            <i class="fa-solid fa-xmark" onclick="closePopup('nav')"></i>
+            <span class="grip"></span>
+            <span class="leg-nav left-leg"></span>
+            <span class="leg-nav right-leg"></span>
+
+
+
+            <div class="headerSliderNavbar mb-2">
+                <a href="index.html" class="nav-brand ">
+                    <img src="images/logo-bg-light.svg" alt="Logo library MA" class="img-fluid me-1">
+                </a>
+                <label class="switch">
+                    <input type="checkbox" id="themeBtn" />
+                    <span class="slider"></span>
+                    <span class="hand left">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M0 9H13V15C13 15.2761 12.7761 15.5 12.5 15.5H0V9Z" fill="#fcdbb0"></path>
+                            <path
+                                d="M13.5 9H21C21.5523 9 22 9.44772 22 10V15C22 15.5523 21.5523 16 21 16H17.5C15.2909 16 13.5 14.2091 13.5 12V9Z"
+                                fill="#FED5CD"></path>
+                            <path d="M13 9H15V14.5C15 14.7761 14.7761 15 14.5 15H13V9Z" fill="#2b1b08"></path>
+                            <path class="thumb"
+                                d="M23.25 9.19999H15V14.2C16.933 14.2 18.5 12.633 18.5 10.7L22.25 10.7C22.9403 10.7 23.5 10.1404 23.5 9.44999C23.5 9.31192 23.3881 9.19999 23.25 9.19999Z"
+                                fill="#FDE3D9"></path>
+                        </svg>
+                    </span>
+                    <span class="hand right">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M24 9H11V15C11 15.2761 11.2239 15.5 11.5 15.5H24V9Z" fill="#2b1b08"></path>
+                            <path
+                                d="M10.5 9H3C2.44772 9 2 9.44772 2 10V15C2 15.5523 2.44772 16 3 16H6.5C8.70914 16 10.5 14.2091 10.5 12V9Z"
+                                fill="#FED5CD"></path>
+                            <path d="M11 9H9V14.5C9 14.7761 9.22386 15 9.5 15H11V9Z" fill="#fcdbb0"></path>
+                            <path class="thumb"
+                                d="M0.750003 9.19999H9V14.2C7.067 14.2 5.5 12.633 5.5 10.7L1.75002 10.7C1.05965 10.7 0.5 10.1404 0.5 9.44999C0.5 9.31192 0.61193 9.19999 0.750003 9.19999Z"
+                                fill="#FDE3D9"></path>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+            <div class="bodySlideNavbar">
+                <ul type="none" class="p-0 m-0">
+                    <li class="mb-2">
+                        <a href="index.html" class="slide-bar-link active">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/about.html" class="slide-bar-link">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                About
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/categories.html" class="slide-bar-link">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Categories
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/favorite.html" class="slide-bar-link">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Favorite
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/howToUse.html" class="slide-bar-link">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                How To use?
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/materials.html" class="slide-bar-link">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Materials
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/playlists.html" class="slide-bar-link">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Playlists
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="pages/registration.html" class="slide-bar-link">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Registration
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="popup" data-popup-name="viewFiles" onclick="closePopup('viewFiles')">
+        <div class="box">
+            <div class="icon">
+                <i class="fa-solid fa-xmark" onclick="closePopup('viewFiles')"></i>
+            </div>
+            <div class="pdf-viewer w-100 h-100">
+                <embed src="https://drive.google.com/file/d/12WEGODfLuOI6bDLEKEcHT06Tf14dgLIs/preview" allow="autoplay"
+                    width="100%" height="100%" />
+            </div>
+        </div>
+    </div>  
+
+    <!-- Plugins Src -->
+    <script src="js/plugins/swiper-bundle.min.js"></script>
+    <script src="js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="js/plugins/sweetalert2.bundle.min.js"></script>
+    <script src="js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/plugins/wow.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!-- Normal Src -->
+    <script src="js/data/data.API.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/pages/home.js"></script>
+</body>
+
+</html>

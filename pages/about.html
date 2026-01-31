@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA Library</title>
+
+    <base href="../">
+
+    <link rel="stylesheet" href="css/plugins/all.min.css">
+    <link rel="stylesheet" href="css/plugins/fonts.css">
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins/animate.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.theme.default.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="images/logo-bg-light.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Global Components -->
+    <div class="loading-page" id="loading">
+        <div class="book">
+            <div class="book__pg-shadow"></div>
+            <div class="book__pg"></div>
+            <div class="book__pg book__pg--2"></div>
+            <div class="book__pg book__pg--3"></div>
+            <div class="book__pg book__pg--4"></div>
+            <div class="book__pg book__pg--5"></div>
+        </div>
+
+        <h2 class="h1 font-4">
+            Library MA
+        </h2>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav id="Navbar1" class="">
+        <div class="container">
+            <span id="BtnSliderNavbar" onclick="openPopup('nav')">
+                <span class="lines"></span>
+                <span class="lines"></span>
+                <span class="lines"></span>
+            </span>
+            <a href="index.html" class="nav-brand ">
+                <img src="images/logo-bg-light.svg" alt="Logo library MA" class="img-fluid me-1">
+                <h5 class="m-0">Library MA</h5>
+            </a>
+            <div class="d-lg-block d-none" id="navbarList">
+                <ul type="none" class="d-flex p-0 m-0">
+                    <li class="parent-link">
+                        <a href="pages/howToUse.html" class="navLink">
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="move-div"></span>
+                            <span class="text font-2">How to use?</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Second Navbar -->
+    <nav id="Navbar2" class="navbar navbar-expand-lg py-1">
+        <div class="container">
+            <a href="index.html" class="navbar-brand ">
+                <img src="images/logo-bg-light.svg" alt="Logo library MA" class="img-fluid me-1">
+                <h5 class="m-0">Library MA</h5>
+            </a>
+            <button id="secondBtnNavbar" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                aria-label="Toggle navigation">
+                <span class="lines"></span>
+                <span class="lines"></span>
+                <span class="lines"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-xl-3 me-lg-1 mb-2 mb-lg-0 mb-xl-0">
+                        <a class="nav-link active" href="#AboutHeader">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">About Us</span>
+                        </a>
+                    </li>
+                    <label class="switch">
+                        <input type="checkbox" id="themeBtn" />
+                        <span class="slider"></span>
+                        <span class="hand left">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M0 9H13V15C13 15.2761 12.7761 15.5 12.5 15.5H0V9Z" fill="#fcdbb0"></path>
+                                <path
+                                    d="M13.5 9H21C21.5523 9 22 9.44772 22 10V15C22 15.5523 21.5523 16 21 16H17.5C15.2909 16 13.5 14.2091 13.5 12V9Z"
+                                    fill="#FED5CD"></path>
+                                <path d="M13 9H15V14.5C15 14.7761 14.7761 15 14.5 15H13V9Z" fill="#2b1b08"></path>
+                                <path class="thumb"
+                                    d="M23.25 9.19999H15V14.2C16.933 14.2 18.5 12.633 18.5 10.7L22.25 10.7C22.9403 10.7 23.5 10.1404 23.5 9.44999C23.5 9.31192 23.3881 9.19999 23.25 9.19999Z"
+                                    fill="#FDE3D9"></path>
+                            </svg>
+                        </span>
+                        <span class="hand right">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M24 9H11V15C11 15.2761 11.2239 15.5 11.5 15.5H24V9Z" fill="#2b1b08"></path>
+                                <path
+                                    d="M10.5 9H3C2.44772 9 2 9.44772 2 10V15C2 15.5523 2.44772 16 3 16H6.5C8.70914 16 10.5 14.2091 10.5 12V9Z"
+                                    fill="#FED5CD"></path>
+                                <path d="M11 9H9V14.5C9 14.7761 9.22386 15 9.5 15H11V9Z" fill="#fcdbb0"></path>
+                                <path class="thumb"
+                                    d="M0.750003 9.19999H9V14.2C7.067 14.2 5.5 12.633 5.5 10.7L1.75002 10.7C1.05965 10.7 0.5 10.1404 0.5 9.44999C0.5 9.31192 0.61193 9.19999 0.750003 9.19999Z"
+                                    fill="#FDE3D9"></path>
+                            </svg>
+                        </span>
+                    </label>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="AboutHeader" class="section-page py-4">
+        <div class="container text-center pt-5 pb-4">
+            <div class="titles mb-3">
+                <h2 class="mb-2">About Library MÀ</h2>
+                <h6>
+                    Library MÀ is a personal academic platform created to organize and simplify access to university
+                    materials.
+                </h6>
+            </div>
+            <div class="row" id="cardActives">
+                <div class="part py-2 mb-2 mb-lg-0 col-lg-4">
+                    <div class="item ">
+                        <div class="parent-card me-md-3 me-lg-0 mb-3">
+                            <div class="about-card">
+                                <div class="head">
+                                    <h4 class="font-3">Who I Am ?</h4>
+                                </div>
+                                <div class="body">
+                                    <p class="mb-0 font-4">
+                                        I am a second-year student at the Faculty of Computer Science and Artificial
+                                        Intelligence, Helwan University.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="parent-card mb-3">
+                            <div class="about-card">
+                                <div class="head">
+                                    <h4 class="font-3">Technical Background</h4>
+                                </div>
+                                <div class="body">
+                                    <p class="mb-0 font-4">
+                                        Front-End Developer specialized in building user-friendly and organized web
+                                        interfaces using Angular.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="part py-2 col-lg-4 mb-2 mb-lg-0">
+                    <div class="item">
+                        <img src="images/icons/people.png" alt="Person MA Image" class="img-fluid mb-3">
+                        <h4 class="mb-1">Mohamed Ayman (MÀ)</h4>
+                        <h6 class="mb-0 font-3">Front-End Developer | Computer Science & Artificial Intelligence Student</h6>
+                    </div>
+                </div>
+                <div class="part py-2 col-lg-4">
+                    <div class="item">
+                        <div class="parent-card me-md-3 me-lg-0 mb-3">
+                            <div class="about-card">
+                                <div class="head">
+                                    <h4 class="font-3">About Library MÀ</h4>
+                                </div>
+                                <div class="body">
+                                    <p class="mb-0 font-4">
+                                        Library MÀ is a personal academic platform created to collect and organize
+                                        university materials in one place.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="parent-card mb-3">
+                            <div class="about-card">
+                                <div class="head">
+                                    <h4 class="font-3">Project Purpose</h4>
+                                </div>
+                                <div class="body">
+                                    <p class="mb-0 font-4">
+                                        The main goal is to simplify access to academic files and help students reach
+                                        information quickly and comfortably.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-2 section-page">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-lg-6 part mb-5 mb-lg-0">
+                    <div class="item">
+                        <div class="header mb-4">
+                            <a href="index.html" class="nav-brand">
+                                <img src="images/logo-bg-light.svg" alt="Logo library MA" class="img-fluid me-1">
+                                <h5 class="m-0 font-2">Library MA</h5>
+                            </a>
+                        </div>
+                        <div class="body text-start">
+                            <p class="mb-3">
+                                MA Library is your ultimate academic companion — a modern digital space designed to help
+                                university students learn, explore, and access educational resources anytime, any where.
+                            </p>
+                            <a href="pages/about.html" class="second-main-btn">
+                                <span>
+                                    About Us
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 part mb-3 mb-lg-0">
+                    <div class="item">
+                        <div class="header mb-4">
+                            <h4 class="title-footer font-2">
+                                <i class="fa-solid fa-certificate"></i> Links Pages
+                            </h4>
+                        </div>
+                        <div class="body">
+                            <ul type="none" class="p-0">
+                                <li class="mb-3">
+                                    <a href="pages/howToUse.html" class="footer-link wow animate__bounceIn"
+                                        data-wow-duration=".5s" data-wow-delay=".1s">
+                                        <span class="font-2"> How To Use?</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="pages/materials.html" class="footer-link wow animate__bounceIn"
+                                        data-wow-duration=".5s" data-wow-delay=".2s">
+                                        <span class="font-2"> Materials</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="pages/playlists.html" class="footer-link wow animate__bounceIn"
+                                        data-wow-duration=".5s" data-wow-delay=".3s">
+                                        <span class="font-2"> Playlists</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="pages/favorite.html" class="footer-link wow animate__bounceIn"
+                                        data-wow-duration=".5s" data-wow-delay=".4s">
+                                        <span class="font-2"> Favorite</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 part">
+                    <div class="item">
+                        <div class="header mb-4">
+                            <h4 class="title-footer font-2">
+                                <i class="fa-solid fa-phone"></i> Contact Us
+                            </h4>
+                        </div>
+                        <div class="body">
+                            <ul type="none" class="p-0">
+                                <li class="mb-3">
+                                    <a class="footer-link wow animate__bounceIn" data-wow-duration=".5s"
+                                        data-wow-delay=".1s" target="_blank" href="https://wa.me/qr/OZJSQ4A6AYJOO1">
+                                        <span class="footer-social">
+                                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="footer-link wow animate__bounceIn" data-wow-duration=".5s"
+                                        data-wow-delay=".2s" target="_blank"
+                                        href="https://www.linkedin.com/in/mohamed-ayman-abdelrazek-8abb06345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                        <span class="footer-social">
+                                            <i class="fa-brands fa-linkedin"></i> Linked in
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="footer-link wow animate__bounceIn" data-wow-duration=".5s"
+                                        data-wow-delay=".3s" target="_blank" href="https://github.com/MA-reh">
+                                        <span class="footer-social">
+                                            <i class="fa-brands fa-github"></i> GitHub
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="footer-link wow animate__bounceIn" data-wow-duration=".5s"
+                                        data-wow-delay=".4s" target="_blank" href="mailto:mohamedayman152025@gmail.com">
+                                        <span class="footer-social">
+                                            <i class="fa-solid fa-envelope"></i> My Email
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-author text-center">
+                <span>
+                    © 2023 <span class="text-2">Library MA</span> . All Rights Reserved | Created by <span
+                        class="text-1">Mohammed_Ayman(MÀ).</span>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global Components -->
+    <div class="popup" data-popup-name="nav" onclick="closePopup('nav')">
+        <span class="hands">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24" fill="none"
+                stroke="#f9e9d5" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-hand-icon icons grab lucide-hand">
+                <path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+                <path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
+                <path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" />
+                <path
+                    d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24" fill="none"
+                stroke="#f9e9d5" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-hand-grab-icon icons  lucide-hand-grab">
+                <path d="M18 11.5V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4" />
+                <path d="M14 10V8a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
+                <path d="M10 9.9V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v5" />
+                <path d="M6 14a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+                <path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-4a8 8 0 0 1-8-8 2 2 0 1 1 4 0" />
+            </svg>
+        </span>
+        <div class="box">
+            <i class="fa-solid fa-xmark" onclick="closePopup('nav')"></i>
+            <span class="grip"></span>
+            <span class="leg-nav left-leg"></span>
+            <span class="leg-nav right-leg"></span>
+
+            <div class="headerSliderNavbar mb-2">
+                <a href="index.html" class="nav-brand ">
+                    <img src="images/logo-bg-light.svg" alt="Logo library MA" class="img-fluid me-1">
+                </a>
+                <label class="switch">
+                    <input type="checkbox" id="themeBtn" />
+                    <span class="slider"></span>
+                    <span class="hand left">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M0 9H13V15C13 15.2761 12.7761 15.5 12.5 15.5H0V9Z" fill="#fcdbb0"></path>
+                            <path
+                                d="M13.5 9H21C21.5523 9 22 9.44772 22 10V15C22 15.5523 21.5523 16 21 16H17.5C15.2909 16 13.5 14.2091 13.5 12V9Z"
+                                fill="#FED5CD"></path>
+                            <path d="M13 9H15V14.5C15 14.7761 14.7761 15 14.5 15H13V9Z" fill="#2b1b08"></path>
+                            <path class="thumb"
+                                d="M23.25 9.19999H15V14.2C16.933 14.2 18.5 12.633 18.5 10.7L22.25 10.7C22.9403 10.7 23.5 10.1404 23.5 9.44999C23.5 9.31192 23.3881 9.19999 23.25 9.19999Z"
+                                fill="#FDE3D9"></path>
+                        </svg>
+                    </span>
+                    <span class="hand right">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M24 9H11V15C11 15.2761 11.2239 15.5 11.5 15.5H24V9Z" fill="#2b1b08"></path>
+                            <path
+                                d="M10.5 9H3C2.44772 9 2 9.44772 2 10V15C2 15.5523 2.44772 16 3 16H6.5C8.70914 16 10.5 14.2091 10.5 12V9Z"
+                                fill="#FED5CD"></path>
+                            <path d="M11 9H9V14.5C9 14.7761 9.22386 15 9.5 15H11V9Z" fill="#fcdbb0"></path>
+                            <path class="thumb"
+                                d="M0.750003 9.19999H9V14.2C7.067 14.2 5.5 12.633 5.5 10.7L1.75002 10.7C1.05965 10.7 0.5 10.1404 0.5 9.44999C0.5 9.31192 0.61193 9.19999 0.750003 9.19999Z"
+                                fill="#FDE3D9"></path>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+            <div class="bodySlideNavbar">
+                <ul type="none" class="p-0 m-0">
+                    <li class="mb-2">
+                        <a href="index.html" class="slide-bar-link ">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/about.html" class="slide-bar-link active">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                About
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/categories.html" class="slide-bar-link ">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Categories
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/favorite.html" class="slide-bar-link">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Favorite
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/howToUse.html" class="slide-bar-link ">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                How To use?
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/materials.html" class="slide-bar-link ">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Materials
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pages/playlists.html" class="slide-bar-link ">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Playlists
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="pages/registration.html" class="slide-bar-link">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="text">
+                                Registration
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" data-popup-name="viewFiles" onclick="closePopup('viewFiles')">
+        <div class="box">
+            <div class="icon">
+                <i class="fa-solid fa-xmark" onclick="closePopup('viewFiles')"></i>
+            </div>
+            <div class="pdf-viewer w-100 h-100">
+                <embed src="https://drive.google.com/file/d/12WEGODfLuOI6bDLEKEcHT06Tf14dgLIs/preview" allow="autoplay"
+                    width="100%" height="100%" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Plugins Src Optional -->
+    <script src="js/plugins/swiper-bundle.min.js"></script>
+    <script src="js/plugins/sweetalert2.bundle.min.js"></script>
+
+    <!-- Plugins Src -->
+    <script src="js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/plugins/wow.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!-- Normal Src -->
+    <script src="js/data/data.API.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/pages/about.js"></script>
+</body>
+
+</html>
